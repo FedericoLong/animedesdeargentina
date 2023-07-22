@@ -1,0 +1,96 @@
+
+h1 {
+  background-color: orange;
+  color: white;
+  padding: 8px;
+  font-family: "GoticaNegra", sans-serif;
+  text-align: center; 
+}
+
+/* Estilo para que los H1 sean responsivos */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+/* Estilo para el contenedor principal */
+.container {
+  display: grid;
+  grid-template: 20px 1fr 100px / 1fr; /* Se modificó la altura del header para que sea muy finito */
+  grid-template-areas: "header" "contenido" "footer";
+  grid-gap: 20px;
+  height: 100vh;
+}
+
+/* Estilo para el header */
+.header {
+  grid-area: header;
+  background-color: white; /* Fondo blanco */
+}
+
+/* Estilo para el contenido */
+.contenido {
+  grid-area: contenido;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Estilo para la imagen */
+.imagen {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border-radius: 10px;
+}
+
+/* Estilo para el footer */
+.footer {
+  grid-area: footer;
+}
+
+/* Estilo para el item */
+.item {
+  background-color: orange;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Punto de quiebre para dispositivos con un ancho máximo de 600px */
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template: 40px 1fr 60px / 1fr;
+    grid-template-areas: "header" "contenido" "footer";
+  }
+}
+
+/* Punto de quiebre para dispositivos con un ancho mínimo de 600px y máximo de 992px */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .container {
+    grid-template: 80px 1fr 80px / 1fr;
+    grid-template-areas: "header" "contenido" "footer";
+  }
+}
+
+/* Punto de quiebre para dispositivos con un ancho mínimo de 992px */
+@media only screen and (min-width: 992px) {
+  .container {
+    grid-template: 100px 1fr 100px / 400px 1fr;
+    grid-template-areas: "header header" "contenido contenido" "footer footer";
+  }
+}
+
