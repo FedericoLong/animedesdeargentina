@@ -17,8 +17,8 @@ body {
 .titulo {
   font-size: 2em;
   text-align: center;
-  margin-bottom: 20px
-  color: white;
+  margin-bottom: 20px;
+  color: white; /* Color blanco para el título */
 }
 
 .boton-regresar {
@@ -39,6 +39,7 @@ body {
 .contenido {
   font-size: 1.2em;
   line-height: 1.5;
+  color: white; /* Color blanco para el contenido */
 }
 
 @media (max-width: 600px) {
@@ -64,3 +65,4 @@ body {
   text-align: justify;
   text-justify: inter-word;
 }
+
