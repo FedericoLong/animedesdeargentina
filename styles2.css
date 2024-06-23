@@ -42,7 +42,7 @@ body {
 }
 
 /* Color blanco para el contenido dentro de .contenido */
-.contenido,
+
 .contenido p {
   color: white;
 }
