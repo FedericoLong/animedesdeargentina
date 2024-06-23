@@ -37,6 +37,7 @@ body {
   grid-template-areas: "header" "contenido" "footer";
   grid-gap: 20px;
   height: 100vh;
+  back-ground: black;
 }
 
 /* Estilo para el header */
