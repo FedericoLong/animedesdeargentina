@@ -1,8 +1,10 @@
+/* styles2.css */
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: black; 
+  background-color: black;
 }
 
 .container {
@@ -35,6 +37,7 @@ body {
 .contenido {
   font-size: 1.2em;
   line-height: 1.5;
+  color: white; /* Aplicar color blanco al texto en general */
 }
 
 @media (max-width: 600px) {
@@ -52,16 +55,13 @@ body {
 
   .contenido {
     font-size: 1em;
-    color: white;
-    
+    color: white; /* Asegurar que el color blanco se mantenga en pantallas pequeñas */
   }
-
- .contenido p {
-  color: white;
 }
 
-  
-  
+/* Estilo específico para el párrafo */
+.contenido p {
+  text-align: justify;
+  text-justify: inter-word;
+  color: white; /* Aplicar color blanco solo a los párrafos */
 }
-
-
