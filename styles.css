@@ -65,11 +65,12 @@ body {
 /* Estilo para el footer */
 .footer {
   grid-area: footer;
+  background-color: black:
 }
 
 /* Estilo para el item */
 .item {
-  background-color: orange;
+  background-color: black;
   padding: 10px;
   color: white;
   border-radius: 10px;
