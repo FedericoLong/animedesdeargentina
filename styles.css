@@ -43,7 +43,7 @@ body {
 /* Estilo para el header */
 .header {
   grid-area: header;
-  background-color: white; /* Fondo blanco */
+  background-color: black; 
 }
 
 /* Estilo para el contenido */
@@ -52,6 +52,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
+  background-color:black;
 }
 
 /* Estilo para la imagen */
