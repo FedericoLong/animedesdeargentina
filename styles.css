@@ -7,6 +7,9 @@ h1 {
   text-align: center; 
 }
 
+body {background-color: black;
+     }
+
 /* Estilo para que los H1 sean responsivos */
 @media screen and (max-width: 600px) {
   h1 {
