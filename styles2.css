@@ -39,7 +39,12 @@ body {
 .contenido {
   font-size: 1.2em;
   line-height: 1.5;
-  color: white; /* Color blanco para el contenido */
+}
+
+/* Color blanco para el contenido dentro de .contenido */
+.contenido,
+.contenido p {
+  color: white;
 }
 
 @media (max-width: 600px) {
@@ -65,4 +70,5 @@ body {
   text-align: justify;
   text-justify: inter-word;
 }
+
 
